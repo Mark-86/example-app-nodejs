@@ -51,7 +51,7 @@ jobs:
       - name: Use env if not empty
         shell: bash
         run: |
-          if [ -n $ENV ]; then
+          if [ $ENV ]; then
             playground env use $PLAYGROUND_ACCOUNT_NAME/$ENV
           fi
           if [ $? -ne 0 ]; then
