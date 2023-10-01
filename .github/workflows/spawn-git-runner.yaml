@@ -70,7 +70,7 @@ jobs:
           playground apps wait github-runner
   launch-unit-tests:
     needs: create-napptive-env
-    runs-on: [self-hosted, napptive]
+    runs-on: napptive
     steps:
       - name: Checkout
         uses: actions/checkout@v3
